@@ -11,7 +11,7 @@ Make this work (repeat 3 times the contents of an array):
 repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 
 Your solution:
-```
+
 function repeat(arr){
 
   var temp = []
@@ -22,7 +22,7 @@ function repeat(arr){
   
   return temp;
 }
-
+```
 ###### if we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
 
 ### Task 2:
