@@ -10,7 +10,7 @@ Make this work (repeat 3 times the contents of an array):
 ```javascript
 //repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 
-Your solution:
+//Your solution:
 
 function repeat(arr){
 
@@ -30,7 +30,7 @@ Make this work (no vowels, lowercase except the first letter):
 ```javascript
 //reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 
-Your solution:
+//Your solution:
 
 function reformat(text){
 
