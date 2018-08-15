@@ -6,10 +6,22 @@ Languages accepted: Javascript or PHP.
 
 ### Task 1: 
 Make this work (repeat 3 times the contents of an array):
+
 ```javascript
 repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
-```
+
 Your solution:
+```
+function repeat(arr){
+
+  var temp = []
+
+  for(var i=0; i<3; i++){
+      temp.push(arr);
+  }    
+  
+  return temp;
+}
 
 ###### if we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
 
@@ -17,8 +29,32 @@ Your solution:
 Make this work (no vowels, lowercase except the first letter):
 ```javascript
 reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
-```
+
 Your solution:
+```
+function reformat(text){
+
+  var reformatted_text = "";
+  
+  reformatted_text = text.toLowerCase();
+  reformatted_text = reformatted_text.charAt(0).toUpperCase() + reformatted_text.slice(1);
+  
+  for(var i; i<reformatted_text.length; i++){
+  
+    switch(reformatted_text.charAt(i)){
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+        reformatted_text = reformatted_text.slice(0,i-1) + reformatted_text.slice(i+1)
+        break;
+         
+    }
+  }
+  
+  return reformatted_text;
+}
 
 ###### if we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
 
