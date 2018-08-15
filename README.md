@@ -8,7 +8,7 @@ Languages accepted: Javascript or PHP.
 Make this work (repeat 3 times the contents of an array):
 
 ```javascript
-repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
+//repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 
 Your solution:
 
@@ -28,10 +28,10 @@ function repeat(arr){
 ### Task 2:
 Make this work (no vowels, lowercase except the first letter):
 ```javascript
-reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
+//reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 
 Your solution:
-```
+
 function reformat(text){
 
   var reformatted_text = "";
@@ -55,7 +55,7 @@ function reformat(text){
   
   return reformatted_text;
 }
-
+```
 ###### if we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
 
 
