@@ -5,7 +5,6 @@ We will get back to you shortly.
 Languages accepted: Javascript or PHP. 
 
 ### Task 1: 
-Make this work (repeat 3 times the contents of an array):
 
 ```javascript
 //repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
@@ -17,20 +16,16 @@ function repeat(arr){
   var temp = []
 
   for(var i=0; i<3; i++){
-      temp.push(arr);
+      temp.push(...arr);
   }    
   
   return temp;
 }
 ```
-###### if we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
 
 ### Task 2:
-Make this work (no vowels, lowercase except the first letter):
-```javascript
-//reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 
-//Your solution:
+```javascript
 
 function reformat(text){
 
@@ -56,23 +51,45 @@ function reformat(text){
   return reformatted_text;
 }
 ```
-###### if we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
+
 
 
 ### Task 3 (optional, for bonus points):
-Make this work (without using any built in functions, only a `for` loop, return the next binary number in a string or as an array)
+
 ```javascript
-next_binary_number([1,0]) // [1,1]
 
-// possible test cases:
-// [1,0] => [1,1]
-// [1,1] => [1,0,0]
-// [1,1,0] => [1,1,1]
-// .......
-// [1,0,0,0,0,0,0,0,0,1] => [1,0,0,0,0,0,0,0,1,0]
+function next_binary_number(arr){
+
+  var temp = [];
+  var decimal_number = 0;
+  
+  for(var i=0; i<arr.length-1; i++){
+      
+      decimal_number += (2 ** (arr.length-1-i)) * arr[i];
+  
+  }
+  
+  decimal_number++;
+      
+  quotient = decimal_number;
+  
+  
+  while(quotient > 0){
+     
+      remainder = decimal_number % 2;
+      
+      temp.push(remainder) 
+      
+      quotient = decimal_number / 2;
+  
+  }
+
+  return temp;
+
+}
+
+
 ```
-Your solution:
 
-###### if we type in our console your function and next_binary_number([1,0,0,0,0,0,0,0,0,1]) then the result should look like 1,0,0,0,0,0,0,0,1,0 (or as an array).
 
-###### If you get invited to the first interview read the What to expect.md file.
+
