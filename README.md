@@ -7,9 +7,6 @@ Languages accepted: Javascript or PHP.
 ### Task 1: 
 
 ```javascript
-//repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
-
-//Your solution:
 
 function repeat(arr){
 
