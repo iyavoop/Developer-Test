@@ -1,0 +1,10 @@
+function repeat(arr){
+
+  var temp = []
+
+  for(var i=0; i<3; i++){
+      temp.push(...arr);
+  }    
+  
+  return temp;
+}
